@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Office Dashboard — DenTemp</title>
+  <meta name="description" content="Manage temp shifts, permanent jobs, applicants, reviews, and your office team — all in one place." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="brand-mark" aria-hidden="true"><span>D</span></span><span>DenTemp</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="community.html">Community</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta nav-cta-desktop">
+        <a href="#" class="btn btn-ghost">Smile Studio</a>
+        <a href="#post" class="btn btn-primary">Post a shift</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false"><span aria-hidden="true"></span></button>
+    </div>
+    <div id="mobile-nav" class="nav-mobile">
+      <ul><li><a href="community.html">Community</a></li><li><a href="jobs.html">Jobs</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="pricing.html">Pricing</a></li></ul>
+      <div class="nav-mobile-cta"><a href="#post" class="btn btn-primary">Post a shift</a></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="app-shell">
+
+      <aside class="app-sidebar" aria-label="Office dashboard navigation">
+        <div style="padding: 0 14px 16px; border-bottom: 1px solid var(--cream-200); margin-bottom: 12px;">
+          <div style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 500;">Smile Studio Dental</div>
+          <div style="font-size: 0.82rem; color: var(--ink-500);">Austin, TX · ★ 4.8</div>
+        </div>
+
+        <nav>
+          <a href="dashboard.html" class="active">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Overview
+          </a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Shifts</a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Permanent jobs</a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Applicants</a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Favorites</a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Messages</a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Reviews</a>
+          <div class="sidebar-section">Office</div>
+          <a href="profile-office.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg> Office profile</a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Team</a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Settings</a>
+        </nav>
+      </aside>
+
+      <div class="app-main">
+        <div class="feed-head">
+          <div>
+            <h1 style="font-size: 2rem; margin: 0;">Good morning, Allison ☀️</h1>
+            <p style="color:var(--ink-500); margin: 4px 0 0;">Here's what's happening at Smile Studio Dental today.</p>
+          </div>
+          <a href="#post" class="btn btn-primary btn-arrow">Post a new shift</a>
+        </div>
+
+        <!-- Stat cards -->
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-4); margin-bottom: var(--s-6);">
+          <div class="app-card">
+            <div style="font-size: 0.82rem; color: var(--ink-500); text-transform: uppercase; letter-spacing: .1em; font-weight: 600;">Open shifts</div>
+            <div style="font-family: var(--font-display); font-size: 2.2rem; color: var(--rose-600); font-weight: 500;">3</div>
+            <div style="font-size: 0.85rem; color: var(--success); font-weight: 500;">2 with offers pending</div>
+          </div>
+          <div class="app-card">
+            <div style="font-size: 0.82rem; color: var(--ink-500); text-transform: uppercase; letter-spacing: .1em; font-weight: 600;">Applicants this week</div>
+            <div style="font-family: var(--font-display); font-size: 2.2rem; color: var(--rose-600); font-weight: 500;">14</div>
+            <div style="font-size: 0.85rem; color: var(--ink-500);">8 new since Monday</div>
+          </div>
+          <div class="app-card">
+            <div style="font-size: 0.82rem; color: var(--ink-500); text-transform: uppercase; letter-spacing: .1em; font-weight: 600;">Office rating</div>
+            <div style="font-family: var(--font-display); font-size: 2.2rem; color: var(--rose-600); font-weight: 500;">4.8 ★</div>
+            <div style="font-size: 0.85rem; color: var(--ink-500);">6 reviews · 24 shifts hosted</div>
+          </div>
+          <div class="app-card">
+            <div style="font-size: 0.82rem; color: var(--ink-500); text-transform: uppercase; letter-spacing: .1em; font-weight: 600;">Saved vs. agency</div>
+            <div style="font-family: var(--font-display); font-size: 2.2rem; color: var(--success); font-weight: 500;">$11.4K</div>
+            <div style="font-size: 0.85rem; color: var(--ink-500);">YTD · 30x your membership</div>
+          </div>
+        </div>
+
+        <div class="app-grid">
+          <div>
+            <!-- Open shifts -->
+            <div class="app-card" id="post">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: var(--s-4);">
+                <h3 class="app-card-title" style="margin:0;">Your open shifts</h3>
+                <button class="btn btn-primary" style="padding: 8px 16px; font-size: .9rem;">+ Post shift</button>
+              </div>
+
+              <table style="width:100%; border-collapse: collapse;">
+                <thead>
+                  <tr style="text-align: left; border-bottom: 1px solid var(--cream-200);">
+                    <th style="padding: 10px 0; font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-500); font-weight: 600;">Role &amp; date</th>
+                    <th style="padding: 10px 0; font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-500); font-weight: 600;">Offers</th>
+                    <th style="padding: 10px 0; font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-500); font-weight: 600;">Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody style="font-size: .95rem;">
+                  <tr style="border-bottom: 1px solid var(--cream-200);">
+                    <td style="padding: 14px 0;"><strong>RDH</strong> · Today, 8a–5p<br><span style="color: var(--ink-500); font-size: .85rem;">$58–$65/hr · Dentrix</span></td>
+                    <td>3</td>
+                    <td><span style="background: #FEF3F4; color: var(--rose-600); padding: 4px 10px; border-radius: var(--r-full); font-size: .78rem; font-weight: 600;">Offers pending</span></td>
+                    <td style="text-align: right;"><button class="btn btn-secondary" style="padding: 6px 14px; font-size: .85rem;">Review →</button></td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid var(--cream-200);">
+                    <td style="padding: 14px 0;"><strong>DA</strong> · Wed–Thu<br><span style="color: var(--ink-500); font-size: .85rem;">$28/hr · X-ray required</span></td>
+                    <td>1</td>
+                    <td><span style="background: #FEF3F4; color: var(--rose-600); padding: 4px 10px; border-radius: var(--r-full); font-size: .78rem; font-weight: 600;">Offers pending</span></td>
+                    <td style="text-align: right;"><button class="btn btn-secondary" style="padding: 6px 14px; font-size: .85rem;">Review →</button></td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid var(--cream-200);">
+                    <td style="padding: 14px 0;"><strong>RDH</strong> · Permanent<br><span style="color: var(--ink-500); font-size: .85rem;">$80K–$95K · 4-day week</span></td>
+                    <td>10</td>
+                    <td><span style="background: #E6F5F0; color: var(--success); padding: 4px 10px; border-radius: var(--r-full); font-size: .78rem; font-weight: 600;">Open</span></td>
+                    <td style="text-align: right;"><button class="btn btn-secondary" style="padding: 6px 14px; font-size: .85rem;">Review →</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Recent applicants -->
+            <div class="app-card" style="margin-top: var(--s-4);">
+              <h3 class="app-card-title">Recent applicants</h3>
+              <div class="who-row">
+                <div class="avatar" aria-hidden="true"></div>
+                <div class="meta"><strong>Maya R., RDH</strong><span>$58/hr · ★ 4.9 · 47 reviews · 3.2 mi</span></div>
+                <button class="btn-mini" style="background: var(--rose-500);">Accept</button>
+              </div>
+              <div class="who-row">
+                <div class="avatar" aria-hidden="true" style="background:linear-gradient(135deg,var(--gold-500),var(--rose-300));"></div>
+                <div class="meta"><strong>Camila S., RDH</strong><span>$60/hr · ★ 4.9 · 31 reviews · 5.4 mi</span></div>
+                <button class="btn-mini">Review</button>
+              </div>
+              <div class="who-row">
+                <div class="avatar" aria-hidden="true" style="background:linear-gradient(135deg,var(--rose-700),var(--gold-500));"></div>
+                <div class="meta"><strong>Sasha M., RDH</strong><span>$62/hr · ★ 4.7 · 14 reviews · 8.1 mi</span></div>
+                <button class="btn-mini">Review</button>
+              </div>
+            </div>
+          </div>
+
+          <aside>
+            <div class="widget" style="background: linear-gradient(135deg, var(--rose-50), var(--gold-300));">
+              <h3 style="color: var(--rose-700);">Fastest path to filling shifts</h3>
+              <ul style="list-style:none; padding:0; margin:0; font-size:.92rem; color: var(--ink-700);">
+                <li style="padding: 6px 0;">✓ Verified office</li>
+                <li style="padding: 6px 0;">✓ Profile complete</li>
+                <li style="padding: 6px 0;">○ Add a video tour <a href="profile-office.html" style="float:right;">Add →</a></li>
+                <li style="padding: 6px 0;">○ Invite 3 favorites <a href="#" style="float:right;">Invite →</a></li>
+              </ul>
+            </div>
+
+            <div class="widget">
+              <h3>Recent activity</h3>
+              <div style="font-size: .92rem; color: var(--ink-700); line-height: 1.7;">
+                <p style="margin: 0 0 12px;"><strong>Maya R.</strong> sent an offer on your RDH shift.<br><span style="color: var(--ink-500); font-size: .82rem;">11 minutes ago</span></p>
+                <p style="margin: 0 0 12px;"><strong>Bright Smiles Dental</strong> reviewed Camila S. (★ 5).<br><span style="color: var(--ink-500); font-size: .82rem;">2 hours ago</span></p>
+                <p style="margin: 0;"><strong>Jordan T.</strong> saved your office to favorites.<br><span style="color: var(--ink-500); font-size: .82rem;">Yesterday</span></p>
+              </div>
+            </div>
+
+            <div class="widget">
+              <h3>Quick post</h3>
+              <p style="font-size: .92rem; color: var(--ink-700); margin: 0 0 12px;">Reuse your last template — RDH, 8a–5p, Dentrix, $58/hr.</p>
+              <button class="btn btn-primary" style="width: 100%;">Post that shift now</button>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

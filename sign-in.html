@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign In — DenTemp</title>
+  <meta name="description" content="Sign in to DenTemp to find shifts, post jobs, and connect with the dental community." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="DenTemp home">
+        <span class="brand-mark" aria-hidden="true"><span>D</span></span>
+        <span>DenTemp</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="community.html">Community</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="for-offices.html">For Offices</a></li>
+          <li><a href="for-professionals.html">For Pros</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta nav-cta-desktop">
+        <a href="sign-up.html" class="btn btn-primary">Join free</a>
+      </div>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false"><span aria-hidden="true"></span></button>
+    </div>
+    <div id="mobile-nav" class="nav-mobile">
+      <ul><li><a href="community.html">Community</a></li><li><a href="jobs.html">Jobs</a></li><li><a href="for-offices.html">For Offices</a></li><li><a href="for-professionals.html">For Pros</a></li><li><a href="pricing.html">Pricing</a></li></ul>
+      <div class="nav-mobile-cta"><a href="sign-up.html" class="btn btn-primary">Join free</a></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="auth-wrap">
+      <aside class="auth-visual" aria-hidden="true">
+        <div class="auth-visual-inner">
+          <span class="eyebrow" style="color: rgba(255,255,255,.8);">Welcome back</span>
+          <h2>The dental community is waiting on the other side.</h2>
+          <p>Pick up where you left off — your shifts, your offices, your people, your reviews.</p>
+          <div class="auth-quote">
+            <blockquote>"DenTemp is where my career feels mine. I set my rate, I see who I'm working with before I drive there, and I keep every dollar I earn."</blockquote>
+            <cite>— Maya R., RDH · 8 years</cite>
+          </div>
+        </div>
+      </aside>
+
+      <section class="auth-form-side">
+        <div class="auth-card">
+          <h1>Sign in</h1>
+          <p>Welcome back to DenTemp.</p>
+
+          <button class="oauth-btn" type="button">
+            <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z"/><path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/><path fill="#FBBC05" d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z"/><path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"/></svg>
+            Continue with Google
+          </button>
+
+          <div class="oauth-divider">or</div>
+
+          <form id="signin-form" novalidate>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" autocomplete="current-password" required />
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 24px;">
+              <label style="display:flex; align-items:center; gap:8px; font-size:.9rem; color:var(--ink-500);">
+                <input type="checkbox" style="accent-color: var(--rose-500);"> Remember me
+              </label>
+              <a href="#" style="font-size:.9rem;">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Sign in</button>
+          </form>
+
+          <p class="auth-footer">
+            New here? <a href="sign-up.html">Create a free account →</a>
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="scripts/main.js" defer></script>
+  <script>
+    document.getElementById('signin-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      location.href = 'community.html';
+    });
+  </script>
+</body>
+</html>
